@@ -1,0 +1,5 @@
+python detect.py --source sample.mp4 --view-img --conf-thres 0.1 --device 0 --weights yolov5s.pt --half
+
+try to integrate with python ide, can cut the video into pieces if you think its too long since gpu not great, then detect anything that is classified as person or something, then compare the detected person with the image's attribute like colour gradient or something
+
+remember to see the matlab for last year image processing assignment one
