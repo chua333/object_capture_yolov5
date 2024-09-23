@@ -1,1 +1,0 @@
-python detect.py --source sample.mp4 --view-img --conf-thres 0.1 --device 0 --weights yolov5s.pt --half
