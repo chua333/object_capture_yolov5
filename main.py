@@ -12,7 +12,7 @@ def stream_reader(stream, buffer):
             break
 
 # Get parameters from user input
-script_path = input("Enter the path to the detect.py script (e.g., C:/Users/AsusVivo15/yolov5/detect.py): ")
+script_path = input("Enter the path to the detect.py script (e.g., yolov5/detect.py): ")
 source = input("Enter the video source file path: ")
 view_img = input("Do you want to view the image? (yes/no): ").lower() == 'yes'
 conf_thresh = float(input("Enter the confidence threshold (e.g., 0.1): "))
