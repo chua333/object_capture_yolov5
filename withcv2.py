@@ -1,16 +1,15 @@
-import torch
-import cv2
 import os
+import cv2
+import torch
+import open_clip
+
+from PIL import Image
+from sentence_transformers import util
 from skimage.metrics import structural_similarity as ssim
 
 
 # function to compute similarity using CLIP based
 def compute_clip(img1, img2):
-    import torch
-    import open_clip
-    from sentence_transformers import util
-    from PIL import Image
-
     # Image processing model
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16-plus-240', pretrained="laion400m_e32")
